@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Color Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .box {
+      width: 200px;
+      height: 250px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: white;
+    }
+    .box-color{
+      width: 200px;
+      height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      /* border: 2px solid black; */
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      border: 1px solid gray;
+      border-radius: 50%;
+    }
+    button {
+      width: 90px;
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+     }
+    .red {
+      color: red;
+      border: 1px solid red;
+      background-color: white;
+    }
+    .red:hover{
+      color: white;
+      background-color: red; 
+      opacity: 0.8;
+    }
+    .blue {
+      color: blue;
+      border: 1px solid blue;
+      background-color: white;
+    }
+    .blue:hover{
+      color: white;
+      background-color: blue; 
+      opacity: 0.8;
+    }
+    .green {
+      color: green;
+      border: 1px solid green;
+      background-color: white;
+    }
+    .green:hover{
+      color: white;
+      background-color: green; 
+      opacity: 0.8;
+    }
+       
+     .white { 
+      color: white;
+      background-color: gray; 
+      opacity: 0.6;}
+    button:hover {
+      color: black;
+      background-color: wheat;
+        opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="circle" id="circle"></div>
+    <div class="box-color">
+      <button class="red" data-color="red">Red</button>
+      <button class="blue" data-color="blue">Blue</button>
+      <button class="green" data-color="green">Green</button>
+      <button class="white" data-color="white">RESET</button>
+    </div>
+    <input type="text" id="colorInput" placeholder="Enter a color name (e.g., red)">
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
